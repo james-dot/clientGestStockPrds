@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { ProduitMockService } from './produit/produit.mock.service';
 import { ProduitComponent } from './produit/produit.component';
+import { AppRoutingModule } from './app.routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { ProduitComponent } from './produit/produit.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,CommonModule
+    FormsModule,CommonModule,
+    AppRoutingModule
   ],
   providers: [ProduitMockService],
   bootstrap: [AppComponent]
