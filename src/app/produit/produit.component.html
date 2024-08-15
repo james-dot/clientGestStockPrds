@@ -1,0 +1,20 @@
+<p>La liste des Produits </p>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Reférence </th>
+            <th>Quantité</th>
+            <th>PrixUnitaire</th>
+        </tr>
+    </thead>
+        <tr *ngFor="let p of produits">
+          <td>{{ p.ref}}</td>  
+          <td>{{p.quantite}}</td>  
+          <td>{{p.prixUnitaire}}</td>  
+      </tr>
+</table> 
+
+
+    
+ 
+  
